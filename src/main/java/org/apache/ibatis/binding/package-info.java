@@ -15,5 +15,6 @@
  */
 /**
  * Binds mapper interfaces with mapped statements.
+ * 使用映射了的statements绑定mapper接口
  */
 package org.apache.ibatis.binding;

@@ -14,6 +14,6 @@
  *    limitations under the License.
  */
 /**
- * Contains all the annotation that are used in mapper interfaces.
+ * 包含所有的注解，这些注解用在mapper接口中
  */
 package org.apache.ibatis.annotations;

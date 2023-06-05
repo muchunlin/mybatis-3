@@ -48,7 +48,7 @@ import java.lang.annotation.Target;
 public @interface ConstructorArgs {
   /**
    * Returns mapping definitions for constructor.
-   *
+   * 返回构造函数的映射定义
    * @return mapping definitions
    */
   Arg[] value() default {};

@@ -27,7 +27,7 @@ import org.apache.ibatis.type.TypeHandler;
 import org.apache.ibatis.type.UnknownTypeHandler;
 
 /**
- * The annotation that specify a mapping definition for the constructor argument.
+ * 这个注解为构造函数中的参数，定义了一个映射定义。
  *
  * @see ConstructorArgs
  *
@@ -40,36 +40,37 @@ import org.apache.ibatis.type.UnknownTypeHandler;
 public @interface Arg {
 
   /**
-   * Returns whether id column or not.
+   * 返回是否是id列
    *
-   * @return {@code true} if id column; {@code false} if otherwise
+   * @return {@code true} 如果id是列; {@code false} 否则
    */
   boolean id() default false;
 
   /**
    * Return the column name(or column label) to map to this argument.
+   * 返回列的名字（或列的标签）来映射这个参数
    *
    * @return the column name(or column label)
+   * @return 列的名字(列的标签)
    */
   String column() default "";
 
   /**
-   * Return the java type for this argument.
-   *
-   * @return the java type
+   * 返回这个参数的的java类型
+   * @return 这个java类型
    */
   Class<?> javaType() default void.class;
 
   /**
    * Return the jdbc type for column that map to this argument.
-   *
+   * 返回这个字段的jdbc的类型。
    * @return the jdbc type
    */
   JdbcType jdbcType() default JdbcType.UNDEFINED;
 
   /**
    * Returns the {@link TypeHandler} type for retrieving a column value from result set.
-   *
+   * 返回用于从结果集中提取的列的值的{@link TypeHandler}的类型
    * @return the {@link TypeHandler} type
    */
   Class<? extends TypeHandler> typeHandler() default UnknownTypeHandler.class;
@@ -90,7 +91,7 @@ public @interface Arg {
 
   /**
    * Returns the parameter name for applying this mapping.
-   *
+   * 返回参数名字
    * @return the parameter name
    *
    * @since 3.4.3
@@ -99,7 +100,7 @@ public @interface Arg {
 
   /**
    * Returns the column prefix that use when applying {@link #resultMap()}.
-   *
+   * 返回列的前缀
    * @return the column prefix
    *
    * @since 3.5.0

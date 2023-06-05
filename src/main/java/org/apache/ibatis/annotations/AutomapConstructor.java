@@ -22,9 +22,9 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * The marker annotation that indicate a constructor for automatic mapping.
+ * 这个标记注解，用来指示一个构造函数的参数的自动映射。
  * <p>
- * <b>How to use:</b>
+ * <b>如何使用呢:</b>
  *
  * <pre>
  * public class User {

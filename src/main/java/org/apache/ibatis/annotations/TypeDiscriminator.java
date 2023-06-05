@@ -28,6 +28,7 @@ import org.apache.ibatis.type.UnknownTypeHandler;
 // @formatter:off
 /**
  * The annotation that be grouping conditional mapping definitions.
+ * 对条件映射定义进行分组的注解
  * <p>
  * <b>How to use:</b>
  *
