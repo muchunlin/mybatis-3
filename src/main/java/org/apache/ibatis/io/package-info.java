@@ -15,5 +15,6 @@
  */
 /**
  * Utilities to read resources.
+ * 用于读取资源的实用程序。
  */
 package org.apache.ibatis.io;

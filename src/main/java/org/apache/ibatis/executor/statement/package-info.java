@@ -15,5 +15,6 @@
  */
 /**
  * Statement handlers.
+ * 语句处理器
  */
 package org.apache.ibatis.executor.statement;

@@ -15,5 +15,6 @@
  */
 /**
  * Contains cache decorators.
+ * 包含缓存修饰器。
  */
 package org.apache.ibatis.cache.decorators;

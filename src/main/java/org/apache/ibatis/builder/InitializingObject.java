@@ -17,6 +17,7 @@ package org.apache.ibatis.builder;
 
 /**
  * Interface that indicate to provide an initialization method.
+ * 指示提供初始化方法的接口。
  *
  * @since 3.4.2
  *
@@ -25,9 +26,9 @@ package org.apache.ibatis.builder;
 public interface InitializingObject {
 
   /**
-   * Initialize an instance.
+   * 初始化一个实例
    * <p>
-   * This method will be invoked after it has set all properties.
+   * 这个方法会被触发，在它已经设置完了所有的属性值之后
    * </p>
    *
    * @throws Exception

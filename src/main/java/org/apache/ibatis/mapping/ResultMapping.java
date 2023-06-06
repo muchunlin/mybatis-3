@@ -26,6 +26,8 @@ import org.apache.ibatis.type.TypeHandler;
 import org.apache.ibatis.type.TypeHandlerRegistry;
 
 /**
+ * xml文件中表字段的声明的实体表示
+ *
  * @author Clinton Begin
  */
 public class ResultMapping {
@@ -49,6 +51,9 @@ public class ResultMapping {
   ResultMapping() {
   }
 
+  /**
+   * 建造者
+   */
   public static class Builder {
     private final ResultMapping resultMapping = new ResultMapping();
 

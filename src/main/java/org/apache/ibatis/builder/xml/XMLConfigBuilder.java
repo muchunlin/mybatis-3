@@ -48,12 +48,20 @@ import org.apache.ibatis.transaction.TransactionFactory;
 import org.apache.ibatis.type.JdbcType;
 
 /**
+ * XML配置建造者
+ *
  * @author Clinton Begin
  * @author Kazuki Shimizu
  */
 public class XMLConfigBuilder extends BaseBuilder {
 
+  /***
+   * 是否解析过，只允许解析一次。
+   */
   private boolean parsed;
+  /**
+   * Mapper.xml文件解析器
+   */
   private final XPathParser parser;
   private String environment;
   private final ReflectorFactory localReflectorFactory = new DefaultReflectorFactory();

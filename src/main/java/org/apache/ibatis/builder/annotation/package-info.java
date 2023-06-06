@@ -15,6 +15,6 @@
  */
 /**
  * Parses annotions to create a Configuration.
- * 解析注解生产配置的类。
+ * 解析注解create a Configuration。
  */
 package org.apache.ibatis.builder.annotation;

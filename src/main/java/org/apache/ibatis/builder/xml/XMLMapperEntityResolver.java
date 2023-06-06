@@ -26,6 +26,8 @@ import org.xml.sax.SAXException;
 
 /**
  * Offline entity resolver for the MyBatis DTDs.
+ * 离线实体阶解析器
+ *
  *
  * @author Clinton Begin
  * @author Eduardo Macarron

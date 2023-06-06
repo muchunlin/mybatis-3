@@ -31,11 +31,20 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 /**
+ *
+ *
  * @author Frank D. Martinez [mnesarco]
  */
 public class XMLIncludeTransformer {
 
+  /**
+   * 配置类
+   */
   private final Configuration configuration;
+
+  /**
+   * mapper建造助手
+   */
   private final MapperBuilderAssistant builderAssistant;
 
   public XMLIncludeTransformer(Configuration configuration, MapperBuilderAssistant builderAssistant) {
@@ -43,6 +52,11 @@ public class XMLIncludeTransformer {
     this.builderAssistant = builderAssistant;
   }
 
+  /**
+   * 应用包含
+   *
+   * @param source 具体节点
+   */
   public void applyIncludes(Node source) {
     Properties variablesContext = new Properties();
     Properties configurationVariables = configuration.getVariables();

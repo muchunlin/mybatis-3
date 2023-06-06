@@ -14,6 +14,6 @@
  *    limitations under the License.
  */
 /**
- * Base package for mapping.
+ * mapping的基础包。
  */
 package org.apache.ibatis.mapping;

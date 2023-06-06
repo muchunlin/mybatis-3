@@ -19,6 +19,7 @@ import java.util.HashMap;
 
 /**
  * Inline parameter expression parser. Supported grammar (simplified):
+ * 内联参数表达式分析器。支持的语法：
  *
  * <pre>
  * inline-parameter = (propertyName | expression) oldJdbcType attributes

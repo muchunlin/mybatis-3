@@ -50,6 +50,8 @@ import org.apache.ibatis.type.JdbcType;
 import org.apache.ibatis.type.TypeHandler;
 
 /**
+ * xmlMapper建造者
+ *
  * @author Clinton Begin
  * @author Kazuki Shimizu
  */
@@ -95,6 +97,9 @@ public class XMLMapperBuilder extends BaseBuilder {
     this.resource = resource;
   }
 
+  /**
+   * 解析
+   */
   public void parse() {
     if (!configuration.isResourceLoaded(resource)) {
       configurationElement(parser.evalNode("/mapper"));
@@ -248,6 +253,11 @@ public class XMLMapperBuilder extends BaseBuilder {
     }
   }
 
+  /**
+   * Mapper.xml文件中<resultMap></>的解析
+   *
+   * @param list map中的每一行列数据列表
+   */
   private void resultMapElements(List<XNode> list) {
     for (XNode resultMapNode : list) {
       try {
